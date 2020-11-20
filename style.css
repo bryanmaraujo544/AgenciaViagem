@@ -432,8 +432,8 @@ ul, a{
 }
 
 .main_grid > .item{
-    
     height: calc(100vh - 50vh);
+    background-color: rgba(137, 43, 226, 0);
 }
 
 .main_grid > .item > img{
@@ -456,9 +456,55 @@ ul, a{
     grid-column: 2/4;
 }
 
-.main_grid > .item_8{
-    grid-columns: 3/5;
-    height: 100%;
+
+
+.legend{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgba(0, 89, 255, 0);
+    padding-left: 10px;
+    width: auto;
+    height: 35%;
+    color: black !important;
+}
+
+.legend > .legend_title{
+    background-color: rgba(0, 0, 0, 0);
+}
+.legend > .legend_title > .title{
+    font-size: var(--m) !important;
+    color: rgb(0, 0, 0);
+}
+.legend > .legend_title > .subtitle{
+    font-size: var(--s);
+    color: black;
+}
+
+
+.legend > .legend_footer{
+    background-color: rgba(210, 105, 30, 0);
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+
+}
+.legend > .legend_footer > p{
+    width: 80%;
+    font-size: 12px;
+    line-height: 1.5;
+    color: black;
+}
+
+.legend > .legend_footer > div > .legend_footer_price{
+    font-size: var(--m);
+    color: black !important;
+}
+
+.legend > .legend_footer > div > span{
+    color: black;
 }
 
 
