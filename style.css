@@ -509,7 +509,7 @@ ul, a{
 
 .item_2 > .legend > .legend_footer{
     justify-content: start;
-    color: red;
+    color: rgb(61, 50, 50);
 }
 
 
