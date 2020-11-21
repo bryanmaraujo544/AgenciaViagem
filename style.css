@@ -507,6 +507,15 @@ ul, a{
     color: black;
 }
 
+.item_2 > .legend > .legend_footer{
+    justify-content: start;
+    color: red;
+}
+
+
+
+
+
 
 
 
