@@ -1,5 +1,5 @@
 let headeer = document.querySelector("header");
-let ext = document.querySelectorAll('.lis');
+
 
 
 
@@ -7,12 +7,12 @@ function navbarCollapse() {
     const windowTop = window.pageYOffset;
     if(( windowTop) > 80 ){
         headeer.classList.add('naav');
-        ext.classList.add('preto');
+        
         
     }
     else {
         headeer.classList.remove('naav');
-        ext.classList.add('preto');
+        
         
     }
    

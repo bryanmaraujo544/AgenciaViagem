@@ -202,6 +202,7 @@ ul, a{
     background: none;
     width: auto;
     justify-content: center;
+    align-items: center;
     display: flex;
     flex-direction: column;
 }
@@ -378,52 +379,13 @@ ul, a{
    
 }
 
-@media(max-width: 600px){
-    .header_container img{
-        width: 100px;
-    }
 
-    .searchcont:hover > .search{
-        width: 70px;
-    }
-
-    .h_itens{
-        flex-direction: column;
-        position: relative;
-        order: -1;
-        top: 30px;
-    }
-    
-    .h_li a{
-        font-size: 12px !important;
-    }
-
-    .h_itens > li > a, .h_itens > li{
-        margin-left: 0 !important;
-        font-size: 12px !important;
-
-    }
-
-    .Ext li{
-        top: -40px;
-        left: 70%;
-        width: 100px;
-        animation: none !important;
-    }
-
-    .naav{
-    position: absolute;
-    width: 100%;
-    height: auto;
-    transition: height .5s ease ;
-    }
-}
 
 /*Estilização do conteúdo principal do site, grids e afins*/
 
 .main_grid{
     display: grid;
-    width: 90vw;
+    width: 90%;
     margin: auto;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, 1fr);
@@ -433,7 +395,7 @@ ul, a{
 
 .main_grid > .item{
     height: calc(100vh - 50vh);
-    background-color: rgba(137, 43, 226, 0);
+    
 }
 
 .main_grid > .item > img{
@@ -513,7 +475,86 @@ ul, a{
 }
 
 
+@media(max-width: 600px){
+    .header_container img{
+        width: 80px;
+    }
+    .header{
+        position: absolute;
+    }
 
+    .searchcont:hover > .search{
+        width: 70px;
+    }
+
+    .h_itens{
+        flex-direction: column;
+        position: relative;
+        order: -1;
+        top: 30px;
+    }
+    
+    .h_li a{
+        font-size: 12px !important;
+    }
+
+    .h_itens > li > a, .h_itens > li{
+        margin-left: 0 !important;
+        font-size: 12px !important;
+
+    }
+
+    .Ext li{
+        top: -40px;
+        left: 70%;
+        width: 100px;
+        animation: none !important;
+    }
+
+    .naav{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    transition: height .5s ease ;
+    }
+
+    .mensagens{
+        width: 80%;
+        align-items: center;
+        
+    }
+    .mensagens > .t2{
+        font-size: var(--m);
+
+    }
+    .mensagens > .t1{
+        font-size: var(--s);
+        width: 80%;
+        
+        
+    }
+    .main_grid{
+        
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(9, 1fr);
+        row-gap: 40px;    
+    }
+
+
+    .main_grid > .item{
+        grid-column: 1/2 !important;
+     
+    }
+    .main_grid > .item_2{
+        grid-row: 1/2;
+       
+    }
+    .main_grid > .item_2 img{
+        height: 65%;
+    }
+
+
+}
 
 
 
