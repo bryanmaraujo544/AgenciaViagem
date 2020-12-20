@@ -55,6 +55,7 @@ ul, a{
    display: flex;
    justify-content: space-between;
    align-items: center;
+   
 
 }
 
@@ -363,18 +364,19 @@ ul, a{
 /* classes do javascript*/
 
 .lis{
-    color: red;
+    color: red !important;
 }
-.preto{
-    color: black !important;
-    
+
+
+.pretoo{
+    color: black !important;  
 }
 
 .naav{
     background-color: var(--azul-mar);
     width: 100%;
     height: 80px;
-    transition: height .5s ease ;
+    transition: height 1s ease ;
 
    
 }
@@ -554,6 +556,28 @@ ul, a{
     }
 
 
+}
+
+
+[data-anima]{
+    opacity: 1;
+    transition: ease .2s;
+}
+
+[data-anima="left"]{
+    transform: translate3d(-50px, 0px, 0);
+}
+[data-anima="right"]{
+    transform: translate3d(50px, 0px, 0);
+}
+[data-anima="top"]{
+    transform: translate3d(0, -50px, 0);
+}
+
+[data-anima].animacao{
+    opacity: 1;
+    transform: translate3d(0,0,0);
+    
 }
 
 
